@@ -4,7 +4,7 @@ const { join } = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, '../../dist/apps/xy-nx'),
+    path: join(__dirname, '../../dist/apps/react-demo'),
   },
   devServer: {
     port: 4200,
