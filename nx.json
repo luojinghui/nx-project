@@ -15,7 +15,10 @@
     "sharedGlobals": []
   },
   "release": {
-    "projects": ["libs/*"]
+    "projects": ["libs/*"],
+    "git": {
+      "commitMessage": "feat: publish release version: v{version}[#000000]"
+    }
   },
   "plugins": [
     {
