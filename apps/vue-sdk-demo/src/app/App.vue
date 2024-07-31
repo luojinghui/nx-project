@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
+import { XYRTC } from '@xylink/test-sdk';
+
+console.log('=======testSdk(): ', XYRTC.version);
 </script>
 
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
+      <RouterLink class="text-lg" to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
     </nav>
   </header>

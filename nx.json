@@ -63,5 +63,17 @@
       }
     }
   },
-  "nxCloudAccessToken": "NDA1YTUyZjYtMTk4NC00ZGUxLTk2ODEtNjRhNjg0Yzc4YzA5fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "NDA1YTUyZjYtMTk4NC00ZGUxLTk2ODEtNjRhNjg0Yzc4YzA5fHJlYWQtd3JpdGU=",
+  "targetDefaults": {
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "@nx/vite:build": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  }
 }

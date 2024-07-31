@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@xy-nx/vue-demo": ["apps/vue-demo/src/index.ts"]
+      "@xylink/test-sdk": ["libs/test-sdk/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
