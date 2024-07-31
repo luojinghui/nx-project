@@ -7,7 +7,6 @@
   "main": "./index.js",
   "module": "./index.mjs",
   "typings": "./index.d.ts",
-  "private": true,
   "devDependencies": {
     "publisher-npm": "^0.12.1"
   }

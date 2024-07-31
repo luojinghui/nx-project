@@ -14,6 +14,14 @@
         "tsConfig": "libs/test-sdk/tsconfig.lib.json",
         "assets": ["libs/test-sdk/*.md"]
       }
+    },
+    "publish": {
+      "executor": "@nx/js:release-publish",
+      "options": {
+        "package": "libs/test-sdk",
+        "registry": "https://fe-private-npm.xylink.com/",
+        "tag": "release v1.0.0"
+      }
     }
   }
 }
