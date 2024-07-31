@@ -1,6 +1,6 @@
 {
   "name": "@xylink/test-sdk",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "dependencies": {
     "@xylink/xy-rtc-sdk": "^4.0.0"
   },
