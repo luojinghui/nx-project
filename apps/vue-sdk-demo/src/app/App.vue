@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
-import { XYRTC } from '@xylink/test-sdk';
+import { testSdk } from '@xylink/test-sdk';
 
-console.log('=======testSdk(): ', XYRTC.version);
+console.log('=======testSdk(): ', testSdk());
 </script>
 
 <template>
