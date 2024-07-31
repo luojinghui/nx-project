@@ -22,6 +22,12 @@
         "registry": "https://fe-private-npm.xylink.com/",
         "tag": "release v1.0.0"
       }
+    },
+    "nx-release-publish": {
+      "options": {
+        "registry": "https://fe-private-npm.xylink.com/",
+        "tag": "Release v{version}"
+      }
     }
   }
 }
