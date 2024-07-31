@@ -18,15 +18,8 @@
     "publish": {
       "executor": "@nx/js:release-publish",
       "options": {
-        "package": "libs/test-sdk",
         "registry": "https://fe-private-npm.xylink.com/",
         "tag": "release v1.0.0"
-      }
-    },
-    "nx-release-publish": {
-      "options": {
-        "registry": "https://fe-private-npm.xylink.com/",
-        "tag": "Release v{version}"
       }
     }
   }
