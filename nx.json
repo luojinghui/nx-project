@@ -15,7 +15,7 @@
     "sharedGlobals": []
   },
   "release": {
-    "projects": ["libs/*"],
+    "projects": ["packages/*"],
     "git": {
       "commitMessage": "feat: publish release version: v{version}[#000000]"
     }
@@ -65,7 +65,8 @@
       },
       "library": {
         "style": "tailwind",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "none"
       }
     }
   },

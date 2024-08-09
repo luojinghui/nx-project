@@ -1,7 +1,7 @@
-# test-sdk
+# rtc-sdk
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
 
-Run `nx build test-sdk` to build the library.
+Run `nx run rtc-sdk:build` to build the library.

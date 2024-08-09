@@ -1,0 +1,19 @@
+{
+  "name": "rtc-sdk",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/rtc-sdk/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/rtc-sdk",
+        "main": "packages/rtc-sdk/src/index.ts",
+        "tsConfig": "packages/rtc-sdk/tsconfig.lib.json",
+        "assets": ["packages/rtc-sdk/*.md"]
+      }
+    }
+  }
+}

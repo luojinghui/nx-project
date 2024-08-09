@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@xylink/test-sdk": ["libs/test-sdk/src/index.ts"]
+      "rtc-sdk": ["packages/rtc-sdk/src/index.ts"],
+      "libs/*": ["packages/rtc-sdk/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

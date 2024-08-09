@@ -6,7 +6,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/libs/test-sdk',
+  cacheDir: '../../node_modules/.vite/packages/xy-rtc-sdk',
 
   plugins: [
     nxViteTsPaths(),
@@ -16,6 +16,12 @@ export default defineConfig({
     }),
   ],
 
+  resolve: {
+    alias: {
+      'libs': path.resolve(__dirname, './src/lib'),
+    },
+  },
+
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
@@ -24,7 +30,7 @@ export default defineConfig({
   // Configuration for building your library.
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
-    outDir: '../../dist/libs/test-sdk',
+    outDir: '../../dist/packages/xy-rtc-sdk',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
@@ -33,7 +39,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points.
       entry: 'src/index.ts',
-      name: '@xylink/test-sdk',
+      name: '@xylink/xy-rtc-sdk',
       fileName: 'index',
       // Change this to the formats you want to support.
       // Don't forget to update your package.json as well.
