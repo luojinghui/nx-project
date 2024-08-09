@@ -2,7 +2,10 @@
   "name": "@xy-nx/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build:all": "nx run-many --target=build --all"
+  },
   "private": true,
   "dependencies": {
     "react": "18.3.1",
